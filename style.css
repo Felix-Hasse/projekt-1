@@ -2,14 +2,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .menu-header{
+    background-color: black;
+    opacity: 70%;
     height: 60px;
     position: fixed;
-    display: block;
+    display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
-    color: #333
+    color: rgb(250, 240, 240)
 }
 .link-work{
     position: absolute;
@@ -17,18 +19,209 @@ body{
     left: 20px;
     text-decoration: none;
     font-size: 26px;
-    margin-top: 38px;
+  
+    color: rgb(253, 252, 252);
    
+}
+.link-work:hover{
+    font-size: 28px;
 }
 h1{
    text-align: center;
-    font-size: 26px;
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    
+}
+h2{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .link-Contact{
    text-decoration: none;
    margin-left: 92vw;
-   margin-bottom: 7px;
+   margin-top: 25px;
    font-size: 26px;
+ color: rgb(253, 251, 251);
  
 
 }
+.link-Contact:hover{
+font-size: 28px;
+}
+
+.contact{
+   margin-left: 45%;
+   margin-top: 0%;
+}
+.i{
+    margin-right: ;
+}
+.workframe{
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.whead{
+    margin-top: 0%;
+}
+.wart{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.workpic{
+    height: 300px;
+    width: 300px;
+    background-image: url(/images/IMG-20210802-WA0033.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    }
+main{
+    margin: 0;
+    padding: 0;
+
+}
+.front{
+    height: 80vh;
+    width: 100vw;
+    background-image: url(/images/IMG-20210802-WA0027.jpg);
+    background-size: cover;
+}
+.scroll{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ img:hover{
+
+width: 415px;
+height: 517px;
+    
+}
+
+.pic{
+    margin-top: 10px;
+    height: 500px;
+    width: 400px;
+    
+}
+#eins{
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.back a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+footer{
+    width: 100%;
+    height:5vh;
+    background-color: black;
+    opacity: 50%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    
+}
+.circle{
+
+margin-left: 47%;
+
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: circleturn  1s reverse; 
+    animation-duration:3s;
+}
+.b{
+    font-size: 30px;
+  animation: slideb  4s;
+  
+}
+.w{
+    font-size: 30px;
+    animation: slidew  4s;
+}
+
+
+@keyframes slideb{
+    from {transform: translate(360px);}
+    to {transform: translate(0px);}
+}
+@keyframes slidew{
+    from {transform: translate(-360px);}
+    to{transform: translate(0px);}
+}
+@keyframes circleturn {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@media screen and (max-width:768px){
+   .front{
+       height: 50vh;
+       background-position: center;
+   }
+   .contact{
+       margin-left: 40%;
+       margin-top: 0%;
+   }
+   
+   
+    .link-Contact{
+        margin-left: 86%;
+    }
+    .scroll{
+        flex-direction: column;
+        
+        
+    }
+    .scroll img{
+        width: 350px;
+        margin-left: 25px;
+        
+    }
+}
+@media screen and (max-width: 360px) { 
+h1{
+    margin-right: 18px;
+}
+    .front{
+        height: 50vh;
+        background-position: center;
+    }
+     .link-Contact{
+         margin-left: 72%;
+     }
+     .contact{
+         margin-left: 20%;
+         margin-top: 0%;
+     }
+     
+     .scroll img{
+         width: 350px;
+         margin-left: 25px;
+         
+     }
+     .circle{
+         margin-left: 37%;
+     }
+ }
